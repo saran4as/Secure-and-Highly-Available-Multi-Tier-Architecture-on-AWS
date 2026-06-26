@@ -1,0 +1,28 @@
+# Network Design
+
+## VPC Configuration
+
+A dedicated Virtual Private Cloud (VPC) was created to isolate infrastructure.
+
+## Subnet Design
+
+- Public Subnets
+  - Application Load Balancer
+  - NAT Gateway
+
+- Private Application Subnets
+  - EC2 Application Servers
+
+- Private Database Subnets
+  - Aurora Primary and Replica
+
+## Internet Connectivity
+
+- Internet Gateway attached to VPC
+- NAT Gateway enables outbound internet access for private instances
+
+## Routing Strategy
+
+- Public Route Table → Routes to Internet Gateway
+- Private Route Table → Routes to NAT Gateway
+- Database Subnet Route Table → No direct internet access
