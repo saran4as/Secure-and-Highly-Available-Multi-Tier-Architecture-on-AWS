@@ -1,0 +1,18 @@
+# Security Design
+
+## Network Isolation
+
+- Application tier in private subnets
+- Database tier isolated from public access
+
+## Security Groups
+
+- ALB allows HTTP/HTTPS from internet
+- App servers allow traffic only from ALB
+- Database allows traffic only from App servers
+
+## Best Practices Applied
+
+- Principle of least privilege
+- No public IPs for backend systems
+- Segmented network architecture
