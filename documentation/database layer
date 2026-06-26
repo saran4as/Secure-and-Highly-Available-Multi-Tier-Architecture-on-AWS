@@ -1,0 +1,21 @@
+# Database Layer
+
+## Amazon Aurora
+
+Aurora was selected for:
+
+- Managed service
+- High performance
+- Multi-AZ support
+
+## Deployment Model
+
+- Primary DB instance
+- Aurora read replica
+- Deployed in private database subnets
+
+## Benefits
+
+- Improved read performance
+- High availability
+- Automated backups
