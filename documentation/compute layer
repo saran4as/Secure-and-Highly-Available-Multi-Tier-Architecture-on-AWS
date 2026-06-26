@@ -1,0 +1,19 @@
+# Compute Layer
+
+## Application Load Balancer
+
+- Internet-facing
+- Distributes traffic across multiple EC2 instances
+- Performs health checks
+
+## Auto Scaling Group
+
+- Automatically adjusts number of EC2 instances
+- Replaces unhealthy instances
+- Ensures high availability
+
+## EC2 Configuration
+
+- Deployed in private subnets
+- Not directly accessible from the internet
+- Connected to EFS for shared storage
